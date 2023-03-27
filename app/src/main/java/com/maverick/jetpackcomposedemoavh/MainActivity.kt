@@ -6,7 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.maverick.jetpackcomposedemoavh.ui.theme.JetpackComposeDemoAVHTheme
-import com.maverick.jetpackcomposedemoavh.ui.view.DollarCounterScreen
+import com.maverick.jetpackcomposedemoavh.ui.view.TipCalculatorScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeDemoAVHTheme {
                 // A surface container using the 'background' color from the theme
-                DollarCounterScreen()
+                TipCalculatorScreen()
             }
         }
     }
@@ -24,6 +24,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainActivityPreview() {
     JetpackComposeDemoAVHTheme {
-        DollarCounterScreen()
+        TipCalculatorScreen()
     }
 }
