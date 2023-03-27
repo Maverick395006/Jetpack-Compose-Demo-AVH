@@ -1,4 +1,4 @@
-package com.maverick.jetpackcomposedemoavh.ui.model
+package com.maverick.jetpackcomposedemoavh.model
 
 data class Project(
     val name: String,
