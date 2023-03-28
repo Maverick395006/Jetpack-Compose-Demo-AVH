@@ -21,7 +21,7 @@ class MovieViewModel @Inject constructor(private val movieRepository: MovieRepos
         getMovieList()
     }
 
-    fun getMovieList() = viewModelScope.launch(Dispatchers.IO) {
+    private fun getMovieList() = viewModelScope.launch(Dispatchers.IO) {
         when (val result = movieRepository.getMovieList()) {
             is DataState.Success -> {
                 movieList.value = MovieStateHolder(data = result.data)
